@@ -1,0 +1,94 @@
+/* Global*/
+body {
+  font-family: 'seogoe UI', Tahoma, Geneva, Verdana, snas-serif; /* Fonte do site*/
+  backgroud-color: #fff8f0; /* Cor do fundo geral*/
+  color: #333; /*cor do texto*/ 
+}
+
+  h2 {
+      font-weight: 700; /* Título em negrito*/
+      color: #d35400; /* Cor laranja para títulos*/
+  }
+/*navbar*/
+.navbar {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /*sombra da navbar*/
+  background-color: #ffe6cc !important; /* cor de fundo do navbar*/
+}
+.navbar .nav-link {
+  font-weight: 500; /* peso da fonte dos links*/
+  color: #d354000 !important; /*cor dos links*/
+}
+.nav.bar .btn-outline-success: hover {
+  border-color: #d35400;/* botão da busca*/
+  color: #d35400; /*cor do texto do botão*/
+}
+.navbar .btn-outline-success: hover {
+  background-color: d35400; /*cor do fundo do hover*/
+  color: #fff; /*texto em branco no hover*/
+  
+  /*divs por id*/
+}
+#pratos {
+  padding: 50px 0; /*espaço vertical*/
+  background-color: #fff8f0; /*fundo da div de pratos*/ 
+}
+
+#bebidas {
+  padding: 50px 0; /*espaço vertical*/
+  background-color: #ff0e6; /*fundo da div de bebidas*/
+}
+
+#carrinho {
+  padding: 50px 0; /*espaço vertical*/
+  background-color: #ffe6cc; /*fundo da div do cariinho*/  
+}
+/*cards*/
+.card {
+  border-radius: 15px; /*cantos arredondados*/
+  transition: transform 0.3s, box shadow 0.3s; /*animação suave*/
+  box-shodow: 0 4px 6px rgba(0,0,0,0.1); /*sombra inicial*/
+}
+.card:hover {
+   tarnsform: translateY(-10px) scale(1.03); /*leve zoom e subida no hover*/ 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /*sombra maior no hover*/
+}
+.card-img-top {
+  border-top-left-radius: 15px; /*cantos arredondados da imagem*/
+  border-top-right-radius: 15px;
+  height: 200px; /*altura fixa*/
+  object-fit: cover; /*ajusta a imagem sem deformar*/ 
+}
+/*botões*/
+.btn-primary {
+  background-color:#d35400; /*cor do botão principal*/
+  border: none; /*remove borda padrão*/
+  transition: background-color 0.3s; /*animação suave no hover*/
+}
+.btn-primary: hover{
+  background-color: #e67e22; /*cor do botão ao passar o mouse*/
+}
+
+/*listas*/
+.card-text li{
+  list-style-type: square; /*quadrinho na lista*/
+  margin-left: 15px; /*espaço a esquerda*/
+  line-height: 1.5; /*espaço entre as linhas*/
+}
+/*responsividade*/
+@media (max-width; 768px) {
+  . card-img-top{
+    height: 180px; /*ajusta a largura da imagem em tablets*/
+  }
+  
+  @media (max-width: 576px){
+      navbar-brand img{
+         width: 80px; /*logo menor em celulares*/
+  }
+}
+
+
+
+
+
+
+
