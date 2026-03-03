@@ -1,7 +1,7 @@
 /* Global*/
 body {
-  font-family: 'seogoe UI', Tahoma, Geneva, Verdana, snas-serif; /* Fonte do site*/
-  backgroud-color: #fff8f0; /* Cor do fundo geral*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte do site*/
+  background-color: #fff8f0; /* Cor do fundo geral*/
   color: #333; /*cor do texto*/ 
 }
 
@@ -16,14 +16,14 @@ body {
 }
 .navbar .nav-link {
   font-weight: 500; /* peso da fonte dos links*/
-  color: #d354000 !important; /*cor dos links*/
+  color: #d35400 !important; /*cor dos links*/
 }
-.nav.bar .btn-outline-success: hover {
+.navbar .btn-outline-success:hover {
   border-color: #d35400;/* botão da busca*/
   color: #d35400; /*cor do texto do botão*/
 }
-.navbar .btn-outline-success: hover {
-  background-color: d35400; /*cor do fundo do hover*/
+.navbar .btn-outline-success:hover {
+  background-color: #d35400; /*cor do fundo do hover*/
   color: #fff; /*texto em branco no hover*/
   
   /*divs por id*/
@@ -35,7 +35,7 @@ body {
 
 #bebidas {
   padding: 50px 0; /*espaço vertical*/
-  background-color: #ff0e6; /*fundo da div de bebidas*/
+  background-color: #fff0e6; /*fundo da div de bebidas*/
 }
 
 #carrinho {
@@ -45,11 +45,11 @@ body {
 /*cards*/
 .card {
   border-radius: 15px; /*cantos arredondados*/
-  transition: transform 0.3s, box shadow 0.3s; /*animação suave*/
-  box-shodow: 0 4px 6px rgba(0,0,0,0.1); /*sombra inicial*/
+  transition: transform 0.3s, box-shadow 0.3s; /*animação suave*/
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /*sombra inicial*/
 }
 .card:hover {
-   tarnsform: translateY(-10px) scale(1.03); /*leve zoom e subida no hover*/ 
+   transform: translateY(-10px) scale(1.03); /*leve zoom e subida no hover*/ 
   box-shadow: 0 8px 20px rgba(0,0,0,0.2); /*sombra maior no hover*/
 }
 .card-img-top {
@@ -75,16 +75,18 @@ body {
   line-height: 1.5; /*espaço entre as linhas*/
 }
 /*responsividade*/
-@media (max-width; 768px) {
-  . card-img-top{
+@media (max-width: 768px) {
+  .card-img-top{
     height: 180px; /*ajusta a largura da imagem em tablets*/
   }
+}
   
   @media (max-width: 576px){
-      navbar-brand img{
+      .navbar-brand img{
          width: 80px; /*logo menor em celulares*/
   }
 }
+
 
 
 
